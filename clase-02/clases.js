@@ -1,38 +1,38 @@
  class Usuario{
-    constructor(nombre,apellido,libros,mascotas){
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.libros=libros;
-        this.mascotas=mascotas;
+    constructor(name,lastName,books,pets){
+        this.name=name;
+        this.lastName=lastName;
+        this.books=books;
+        this.pets=pets;
     }
 
    getFullName(){
-        return `Nombre: ${this.nombre} Apellido: ${this.apellido}`
+        return `Nombre: ${this.name} Apellido: ${this.lastName}`
     }
-    addMascotas(){
-        return`${this.mascotas.push('Hamster','caballo')}`
+    addPet(pet){
+      this.pets.push(pet)
     }
-    countMascotas(){
-        return`${this.mascotas.length}`
+    countPets(){
+        return`${this.pets.length}`
     }
-    addBook(){
-        return`${this.libros.push({ nombre: 'Narnia', autor: 'William Golding' })}`
+    addBook(name,author){
+       this.books.push({name,author})
     }
     getBookNames(){
-        return this.libros.map(n => n.nombre)
+        return this.books.map(n => n.name )
     }
 
 
 }
 
 
-const usuario1= new Usuario('Luciano','Roagna',[{nombre:'El señor de las moscas',autor:'William Golding'},{nombre:'Fundacion',autor:'Isaac Asimov'}],['perro','gato'])
+const usuario1= new Usuario('Luciano','Roagna',[{name:'El señor de las moscas',author:'William Golding'},{name:'Fundacion',author:'Isaac Asimov'}],['perro','gato'])
  console.log(usuario1)
 console.log(usuario1.getFullName())
-console.log(usuario1.addMascotas())
-console.log(usuario1) 
-console.log(usuario1.countMascotas())
-console.log(usuario1.addBook())
+usuario1.addPet('Hamster')
+console.log(usuario1)
+console.log(usuario1.countPets())
+usuario1.addBook('Narnia','C. S. Lewis')
 console.log(usuario1)
 console.log(usuario1.getBookNames())
  
