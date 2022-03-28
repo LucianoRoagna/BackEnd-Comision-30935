@@ -10,7 +10,7 @@ const nuevoProducto= new Contenedor('./productos.txt')
       id: 4
 })    */
    
-  nuevoProducto.getById(2);  
+ /*  nuevoProducto.getById(2);   */
  /*  nuevoProducto.getAll();   */
 /* nuevoProducto.deleteById(3); */
 /*  nuevoProducto.deleteAll();  */
