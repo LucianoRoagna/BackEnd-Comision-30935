@@ -35,7 +35,16 @@ console.log(usuario1.countPets())
 usuario1.addBook('Narnia','C. S. Lewis')
 console.log(usuario1)
 console.log(usuario1.getBookNames())
+
+
+
+
+
+
  
+
+
+
 
 
 
