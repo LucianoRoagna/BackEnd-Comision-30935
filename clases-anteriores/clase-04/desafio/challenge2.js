@@ -17,12 +17,13 @@ class Contenedor {
        
        
     }   
+   
        
 
-    async saveFile(params){
-        let jsonString = JSON.stringify(params,null,2);
+     async saveFile(params){
+        let jsonString = JSON.stringify(params);
         await fs.writeFile(this.fileName, jsonString);
-    }
+    } 
    
     
 
